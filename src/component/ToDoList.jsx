@@ -27,9 +27,9 @@ function TodoList() {
   };
 
   // Filter todos based on the search query
-  const filteredTodos = todos.filter(todo => 
-    todo.text.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+//   const filteredTodos = todos.filter(todo => 
+//     todo.text.toLowerCase().includes(searchQuery.toLowerCase())
+//   );
 
   return (
     <div className="container">
@@ -42,14 +42,14 @@ function TodoList() {
       />
       <button onClick={handleAddTodo}>Add</button>
       {/* Search Input */}
-      <input 
+      {/* <input 
         type="text" 
         value={searchQuery} 
         onChange={(e) => setSearchQuery(e.target.value)} 
         placeholder="Search tasks" 
-      />
+      /> */}
       <ul>
-        {filteredTodos.map((todo, index) => (
+        {todos.map((todo, index) => (
           <li key={index}>
             <input 
               type="checkbox" 
