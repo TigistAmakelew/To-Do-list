@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// Set base to root for user site
 export default defineConfig({
-  base: '/To-Do-list/', // Ensure the base URL includes leading and trailing slashes
+  base: '/', 
   plugins: [react()],
 })
