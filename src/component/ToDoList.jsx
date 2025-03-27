@@ -5,7 +5,7 @@ import './CSS/TodoList.css';
 function TodoList() {
   const [todos, setTodos] = useState([]);
   const [inputValue, setInputValue] = useState('');
-  const [searchQuery, setSearchQuery] = useState('');
+  // const [searchQuery, setSearchQuery] = useState('');
 
   const handleAddTodo = () => {
     if (inputValue.trim() !== '') {
